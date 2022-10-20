@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="card shadow mb-4">
+        <div class="card-body">
+            <table class="table table-striped">
+                <tr>
+                    <th>Id :</th>
+                    <th>Album Title :</th>
+                    <th>Artist Name :</th>
+                    <th>Release Date :</th>
+                    <th>Genre :</th>
+                </tr>
+
+                <tbody *ngFor="let album of albums">
+                    <tr>
+                        <td>{{album.id}}</td>
+                        <td>{{album.title}}</td>
+                        <td>{{album.artist}}</td>
+                        <td>{{album.releaseDate | date:'yyyy/MM/dd'}}</td>
+                        <td>{{album.genre}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
